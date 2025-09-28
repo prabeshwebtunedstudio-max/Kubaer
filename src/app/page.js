@@ -24,7 +24,7 @@ export default function Home() {
         <WhyChooseUs />
         <Testimonials />
         <Message />
-        <Feedback/>
+        <Feedback />
       </main>
       {/* Content Ends */}
 
