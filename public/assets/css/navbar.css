@@ -390,3 +390,90 @@
   animation: headshake 0.8s ease;
 }
 
+
+
+/* Auth Modal */
+.auth-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2000;
+}
+
+.auth-content {
+  background: #fff;
+  padding: 30px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  position: relative;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.auth-close {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  border: none;
+  background: transparent;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.auth-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  color: #004aad;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.auth-form input,
+.auth-form select {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.auth-form button {
+  background: #004aad;
+  color: white;
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.auth-form button:hover {
+  background: #003080;
+}
+
+.switch-text {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.switch-text span {
+  color: #004aad;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.account-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}

@@ -1,0 +1,45 @@
+.admin-dashboard {
+  display: flex;
+  min-height: 100vh;
+  font-family: sans-serif;
+}
+
+.admin-sidebar {
+  width: 220px;
+  background: #f1f1f1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.admin-sidebar button {
+  padding: 10px;
+  cursor: pointer;
+  border: none;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.admin-sidebar button:hover {
+  background: #e0e0e0;
+}
+
+.admin-content {
+  flex: 1;
+  padding: 20px;
+  background: #fff;
+}
+
+.admin-content h2 {
+  margin-bottom: 10px;
+}
+
+.admin-content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.admin-content li {
+  margin-bottom: 10px;
+}

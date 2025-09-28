@@ -1,0 +1,260 @@
+
+
+.admin-dashboard {
+  display: flex;
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 250px;
+  color: white;
+  padding: 20px;
+  background-color: #111827;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+  position: relative;
+}
+
+.sidebar.closed {
+  width: 0;
+  padding: 20px 0;
+  opacity: 0;
+}
+
+.sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background: linear-gradient(
+    270deg,
+    #00c6ff,
+    yellow,
+    #ff6a00,
+    #ee0979,
+    #00c6ff,
+    white
+  );
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradientMove 6s ease infinite;
+}
+
+/* Gradient animation */
+@keyframes gradientMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+.sidebar.closed .logo {
+  opacity: 0;
+}
+
+.sidebar-close {
+  background: transparent;
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.sidebar-close:hover {
+  transform: rotate(90deg);
+}
+
+/* Sidebar Menu */
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin-top: 30px;
+}
+
+.sidebar-menu li {
+  padding: 12px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.sidebar-menu li:hover,
+.sidebar-menu li.active {
+  /* background-color: #0f3460; */
+  background-color: rgb(31, 223, 194);
+  transform: translateX(5px);
+}
+
+/* Main Content */
+.dashboard-content {
+  flex: 1;
+  background-color: #f8f9fa;
+  padding: 40px;
+  transition: margin-left 0.4s ease-in-out;
+}
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar-open {
+  background: #0d6efd;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-right: 15px;
+  transition: background 0.3s ease;
+}
+
+.sidebar-open:hover {
+  background: #0056b3;
+}
+
+/* Content Section */
+.dashboard-header h1 {
+  margin-bottom: 20px;
+}
+
+.dashboard-section {
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Buttons */
+.content-actions button {
+  margin-right: 10px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.btn-primary {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+.btn-secondary {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #5a6268;
+}
+
+.btn-danger {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-danger:hover {
+  background-color: #b02a37;
+}
+
+/* Services toggle row */
+.services-toggle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+/* Submenu under Services */
+.submenu {
+  list-style: none;
+  padding-left: 15px;
+   font-weight: bold;
+  margin-top: 5px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.submenu li {
+  padding: 8px 10px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background 0.2s, transform 0.2s;
+}
+
+.submenu li:hover,
+.submenu li.active {
+  background-color: rgb(31, 223, 194);
+  transform: translateX(5px);
+}
+
+/* Small animation for submenu */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.faq-form {
+  margin-top: 20px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.faq-form h2 {
+  margin-bottom: 15px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.form-actions {
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+}

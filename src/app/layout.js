@@ -27,6 +27,10 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+        <head>
+        {/* Global CSS from public */}
+        <link rel="stylesheet" href="/assets/css/auth.css" />
+      </head>
       <body className="antialiased">
         {children}
       </body>
