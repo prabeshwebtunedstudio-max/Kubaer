@@ -1,8 +1,10 @@
+
 "use client";
 
 import Image from "next/image";
 import RibbonStar from "/public/assets/img/star2.svg";
 import LandingImage from "/public/assets/img/landing-image.jpg";
+import "../../public/assets/css/hero.css";
 
 export default function AboutHeader() {
   return (
@@ -72,7 +74,8 @@ export default function AboutHeader() {
                 </span>
               </div>
 
-              <h1 className="wow fadeInUp" data-wow-delay="0.1s">
+              {/* <h1 className="wow fadeInUp" data-wow-delay="0.1s"> */}
+              <h1 className="text-flipdrop">
                 Tailored solutions for every step of your property journey
               </h1>
 
