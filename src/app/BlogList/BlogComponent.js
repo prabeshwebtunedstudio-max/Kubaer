@@ -136,7 +136,7 @@ export default function BlogComponent() {
                   style={{ borderRadius: '30px' }}
                   className={`flex-1 text-sm font-medium text-center px-4 py-2 transition
           ${activeTab === tab
-                      ? "bg-gradient-to-r from-[#86489B] to-[#F171AC] text-white"
+                      ? "bg-gradient-to-r from-[#86489B] to-[#F171AC] text-white shadow-[0_4px_15px_rgba(134,72,155,0.3),0_0_10px_rgba(241,113,172,0.2)]"
                       : "text-gray-500 hover:text-[#86489B] hover:font-bold"
                     }`}
                 >
