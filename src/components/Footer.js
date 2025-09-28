@@ -55,11 +55,11 @@ const Footer = () => {
               </div>
               <div className="footer-menu">
                 <ul>
-                  <li><a href="#">about us</a></li>
-                  <li><a href="#">services</a></li>
-                  <li><a href="#">resources</a></li>
-                  <li><a href="#">blog</a></li>
-                  <li><a href="#">contact</a></li>
+                  <li><a href="/about">about us</a></li>
+                  <li><a href="/services">services</a></li>
+                  <li><a href="/resources">resources</a></li>
+                  <li><a href="/BlogList">blog</a></li>
+                  <li><a href="/contact">contact</a></li>
                 </ul>
               </div>
             </div>
@@ -73,11 +73,11 @@ const Footer = () => {
               </div>
               <div className="footer-menu">
                 <ul>
-                  <li><a href="#">Home Loan</a></li>
-                  <li><a href="#">Investment Loan</a></li>
-                  <li><a href="#">Car & Personal Loan</a></li>
-                  <li><a href="#">SMSF Loan</a></li>
-                  <li><a href="#">Refinancing</a></li>
+                  <li><a href="/home-loan">Home Loan</a></li>
+                  <li><a href="/investment-loan">Investment Loan</a></li>
+                  <li><a href="car-personal-loan">Car & Personal Loan</a></li>
+                  <li><a href="smsf-loan">SMSF Loan</a></li>
+                  <li><a href="/refinancing">Refinancing</a></li>
                 </ul>
               </div>
             </div>

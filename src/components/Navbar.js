@@ -145,14 +145,14 @@ const Navbar = () => {
                   Services <span>{servicesOpen ? "–" : "+"}</span>
                 </button>
                 <ul className="dropdown">
-                  <li><Link href="/home-loan">Home Loan</Link></li>
-                  <li><Link href="investment-loan">Investment Loan</Link></li>
-                  <li><Link href="/car-personal-loan">Car & Personal Loan</Link></li>
-                  <li><Link href="smsf-loan">SMSF Loan</Link></li>
-                  <li><Link href="/refinancing">Refinancing</Link></li>
-                  <li><Link href="/business-loan">Business Loan</Link></li>
+                  <li><Link href="/home-loan" className="headshake">Home Loan</Link></li>
+                  <li><Link href="investment-loan" className="headshake">Investment Loan</Link></li>
+                  <li><Link href="/car-personal-loan" className="headshake">Car & Personal Loan</Link></li>
+                  <li><Link href="smsf-loan" className="headshake">SMSF Loan</Link></li>
+                  <li><Link href="/refinancing" className="headshake">Refinancing</Link></li>
+                  <li><Link href="/business-loan" className="headshake">Business Loan</Link></li>
                 </ul>
-              </li>
+              </li> 
 
               {/* Calculator Dropdown */}
               <li
@@ -165,12 +165,12 @@ const Navbar = () => {
                   Calculator <span>{calculatorOpen ? "–" : "+"}</span>
                 </button>
                 <ul className="dropdown">
-                  <li><Link href="/stamp-duty">Stamp Duty</Link></li>
-                  <li><Link href="/calc-refinacnig">Refinancing</Link></li>
-                  <li><Link href="/borrow-capacity">Borrowing Capacity</Link></li>
-                  <li><Link href="/repayment">Repayments</Link> </li>
-                  <li><Link href="/loan-comparison">Loan Comparison</Link></li>
-                  <li><Link href="/budget-planner">Budget Planner</Link> </li>
+                  <li><Link href="/stamp-duty" className="headshake">Stamp Duty</Link></li>
+                  <li><Link href="/calc-refinacnig" className="headshake">Refinancing</Link></li>
+                  <li><Link href="/borrow-capacity" className="headshake">Borrowing Capacity</Link></li>
+                  <li><Link href="/repayment" className="headshake">Repayments</Link> </li>
+                  <li><Link href="/loan-comparison" className="headshake">Loan Comparison</Link></li>
+                  <li><Link href="/budget-planner" className="headshake">Budget Planner</Link> </li>
                 </ul>
               </li>
 
