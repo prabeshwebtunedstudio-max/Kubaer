@@ -4,6 +4,7 @@
 import Link from "next/link";
 import WhyChooseUs from "../why/page";
 
+
 export default function ContactComponent() {
     return (
         <div className="container mx-auto px-4 py-12">
