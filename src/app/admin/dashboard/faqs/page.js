@@ -1,14 +1,21 @@
 
-//faqs/page.js
+//admin/dashnoard/faqs/page.js
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 
 export default function FaqsPage() {
-  const [faqs, setFaqs] = useState([
-    { question: "What is KUBAER FINANCE?", answer: "We provide loan services." },
-  ]);
+  const [faqs, setFaqs] = useState([]);
+
+  useEffect(() => {
+    async function loadFaqs() {
+      const res = await fetch("/api/faqs");
+      const data = await res.json();
+      if (data.success) setFaqs(data.data);
+    }
+    loadFaqs();
+  }, []);
 
   return (
     <div style={{ padding: "20px" }}>
@@ -18,8 +25,8 @@ export default function FaqsPage() {
       </Link>
 
       <ul style={{ marginTop: "20px" }}>
-        {faqs.map((faq, i) => (
-          <li key={i} style={{ marginBottom: "15px" }}>
+        {faqs.map((faq) => (
+          <li key={faq._id} style={{ marginBottom: "15px" }}>
             <strong>Q:</strong> {faq.question} <br />
             <strong>A:</strong> {faq.answer}
           </li>
